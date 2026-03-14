@@ -9,7 +9,7 @@ import customtkinter as ct
 
 def StartLogic():
     city = CityEnter.get()
-    Temperature = Libr.LogicWeather.Magic(city)
+    Temperature = Library.LogicWeather.Magic(city)
     if Temperature == 1:
         TempText.configure(text="Invalid City Name!")
         CityEnter.delete(0, 'end')
