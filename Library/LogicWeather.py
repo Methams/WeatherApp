@@ -6,7 +6,6 @@ def Magic(city):
     print("Done!")
     return Temp
 
-
 def CityToCoord(City):
     Url = f"https://geocoding-api.open-meteo.com/v1/search?name={City}&count=10&language=en&format=json"
     Feedback = requests.get(Url).json()

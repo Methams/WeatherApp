@@ -1,29 +1,11 @@
-
-#                           /// Essentials ///
-
 #               / Library
+
 import os 
 import json
-import Libr.Matfile
-import Libr.LogicWeather
+import Library.LogicWeather
 import customtkinter as ct
 
-#LEARNINGSHEET///LEARNINGSHEET///LEARNINGSHEET///LEARNINGSHEET///LEARNINGSHEET///LEARNINGSHEET///LEARNINGSHEET///LEARNINGSHEET///
-#   Will use CustomTkinter
-# Label = shows text
-# Entry = user input
-# Button = sends you 2026 porsche if you wish hard enough
-# Root = the window objects are on
-# pack() = put this on the last one
-#
-# Entry logic
-# entryBox = ct.CTKEntry(root1)
-# entered = entryBox.get()
-#
-# Button logic 
-# def someFunction():
-#       print("this that")
-# button1 = ct. CTKButton(root, text="Click this", command=someFunction)
+#               / Function
 
 def StartLogic():
     city = CityEnter.get()
@@ -37,6 +19,7 @@ def StartLogic():
     CityEnter.delete(0, 'end')
     return
 
+#               / Interface
 
 ct.set_appearance_mode("dark")
 ct.set_default_color_theme("blue")
@@ -58,3 +41,4 @@ TempText = ct.CTkLabel(Interface, text="", font=("Helvetica", 20))
 TempText.grid(padx=50, pady=30)
 Interface.mainloop()
 
+# -- Made by Methams
